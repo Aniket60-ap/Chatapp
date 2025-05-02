@@ -21,7 +21,7 @@ function Login() {
   
     try {
       const res = await axios.post(
-        "http://localhost:4000/api/v1/user/login",
+        "https://chatapp-backend-4xha.onrender.com/api/v1/user/login",
         user,
         {
           headers: {
