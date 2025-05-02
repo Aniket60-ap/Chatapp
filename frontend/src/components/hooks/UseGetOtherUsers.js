@@ -8,7 +8,7 @@ function UseGetOtherUsers() {
     const fetchOtherUsers = async () => {
       try {
         axios.defaults.withCredentials = true;
-        const res = await axios.get("https://chatapp-backend-4xha.onrender.com/api/v1/user/");
+        const res = await axios.get("https://chatapp-backend-bdh3.onrender.com/api/v1/user/");
         // console.log(res);
         //store
         dispatch(setOtherUsers(res.data));
