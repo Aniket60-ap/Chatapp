@@ -11,7 +11,7 @@ function UseGetMessages() {
       try {
         axios.defaults.withCredentials = true;
         const res = await axios.get(
-          `http://localhost:4000/api/v1/message/${selectedUser._id}`
+          `https://chatapp-backend-4xha.onrender.com/api/v1/message/${selectedUser._id}`
         );
         // console.log(res);
         //store
