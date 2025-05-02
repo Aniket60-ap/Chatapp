@@ -18,7 +18,7 @@ function Signup() {
     event.preventDefault();
     try {
       const res = await axios.post(
-        "https://chatapp-backend-4xha.onrender.com/api/v1/user/register",
+        "https://chatapp-backend-bdh3.onrender.com/api/v1/user/register",
         user,
         {
           headers: {
