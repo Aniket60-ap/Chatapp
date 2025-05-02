@@ -12,7 +12,7 @@ function SendInput() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        `http://localhost:4000/api/v1/message/send/${selectedUser?._id}`,
+        `https://chatapp-backend-4xha.onrender.com/api/v1/message/send/${selectedUser?._id}`,
         { message },
         {
           headers: {
