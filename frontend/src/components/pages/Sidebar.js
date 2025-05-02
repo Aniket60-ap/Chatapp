@@ -19,7 +19,7 @@ function Sidebar() {
   const navigate = useNavigate();
   const logoutHandler = async () => {
     try {
-      const res = await axios.get("https://chatapp-backend-4xha.onrender.com/api/v1/user/logout");
+      const res = await axios.get("https://chatapp-backend-bdh3.onrender.com/api/v1/user/logout");
       navigate("/login");
       toast.success(res.data.message);
       dispatch(setAuthUser(null));
