@@ -30,7 +30,7 @@ function App() {
   const { socket } = useSelector((store) => store.socket);
   useEffect(() => {
     if (authUser) {
-      const socket = io("http://localhost:4000", {
+      const socket = io("https://chatapp-backend-4xha.onrender.com", {
         query: {
           userId: authUser._id,
         },
