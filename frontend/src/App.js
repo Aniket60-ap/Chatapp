@@ -30,7 +30,7 @@ function App() {
   const { socket } = useSelector((store) => store.socket);
   useEffect(() => {
     if (authUser) {
-      const socket = io("https://chatapp-backend-4xha.onrender.com", {
+      const socket = io("https://chatapp-backend-bdh3.onrender.com", {
         query: {
           userId: authUser._id,
         },
